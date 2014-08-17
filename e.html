@@ -1,7 +1,104 @@
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-  </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <style>
+        #embed_tiny_text {
+            font-family: 'Raleway', sans-serif;
+    }
+    #embed_tiny_text #embed_tiny_text li {
+            list-style-type:none;
+            line-height: 230%;
+    }
+     
+    #embed_tiny_text .check{
+            color:green;
+    }
+     
+    #embed_tiny_text .star{
+            color:gold;
+    }
+     
+    #embed_tiny_text .danger{
+            color:red;
+    }
+     
+    #embed_tiny_text .widget {
+            border: 1px solid #000;
+            padding: 10px;
+            position: absolute;
+            background-color: white;
+            bottom: 0;
+            overflow: hidden;
+            padding: 30px;
+            box-sizing: border-box;
+            width:500px;
+            margin:auto;
+    }
+     
+    #embed_tiny_text .legend{
+            
+            margin-bottom: 10px;
+            background: #fff;
+            width: 100px;
+            text-align:center;
+    }
+     
+    #embed_tiny_text .search {
+            border: 1px solid gray;
+            padding: 3px;
+            display:inline;
+            margin-left: 8px;
+    }
+     
+    #embed_tiny_text .close {
+            display: inline;
+            padding-left: 10px;
+    }
+     
+    #embed_tiny_text .buttons {
+            text-align:center;
+    }
+    #embed_tiny_text .full-txt{
+            width:47%;
+            text-align:center;
+            margin-bottom: 5px;
+    }
+     
+    #embed_tiny_text input {
+            width:88%;
+            margin-left:5px;
+            border:none;
+            outline: none;
+            font-size: 1em;
+    }      
+     
+    #embed_tiny_text button {
+            border: 1px solid #000;
+            background: #fff;
+            font-size: 1em;
+            width: 49%;
+            padding: 10 5 10 5;
+    }
+     
+    #embed_tiny_text ul {
+            margin-left: -33px;
+    }
+     
+  </style>
+  <script type="text/javascript">
+      $(document).ready(function() {
+        $('#toggleTerms').click(function() {
+          $('#TOS').slideToggle();
+          console.log('lol')
+      })
+      })
+
+  </script>
   <div id="embed_tiny_text"><div class='widget' id="embed_tiny_text">
+          <div id="toggleTerms" style="text-align:center;background-color:#eee;padding:5px;cursor:pointer;">
+            Toggle TinyTerms
+          </div>
+          <div id="TOS">
           <div class='legend'>
                   TinyTerms      
           </div>
@@ -31,5 +128,6 @@
                   <button> Terms of Service</button>
                   <button>        Privacy Policy</button>
           </div>
+  </div>
   </div>
   </div>
