@@ -1,12 +1,13 @@
 section
-	form
-		h3 Who will you disclose the information you collect from users to?
-		div
-			label Within the company
-			input(type="text", class="block",placeholder="Include EE's, contractors, advisors, and agents", id="dwc")
-		div
-			label Which affiliates?
-			input(type="text", class="block",placeholder="", id="dwa")
-		div
-			label Third parties?
-			input(type="text", class="block",placeholder="", id ="dwp")
+    form
+        h3 Who will you disclose the information you collect from users to?
+        div
+          div
+            input(type="checkbox", id="d_wc", name='ow_choice')
+            label(for="d_wc") Within the company
+          div
+            input(type="checkbox", id="d_wa", name='ow_choice')
+            label(for="d_wa") With affiliates
+          div
+            input(type="checkbox", id="d_wp", name='ow_choice')
+            label(for="d_wp") With third parties
