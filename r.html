@@ -26,12 +26,121 @@
     var fb = new Firebase("https://tinyterms.firebaseio.com")
     var actual = fb.child(code);
     actual.on('value',function(snapshot) {
-        document.write(snapshot.val())
+    //    document.write(snapshot.val())
     })
 
     </script>
+    <style>
+    body{
+            font-family: 'Lato', sans-serif;
+    }
+    li {
+            list-style-type:none;
+            line-height: 230%;
+    }
+     
+    .check{
+            color:green;
+    }
+     
+    .star{
+            color:gold;
+    }
+     
+    .danger{
+            color:red;
+    }
+     
+    .widget {
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 10px;
+            width: 550px;
+    }
+     
+    .legend{
+            margin-top: -20px;
+            margin-bottom: 10px;
+            background: #fff;
+            width: 100px;
+            text-align:center;
+    }
+     
+    .search {
+            border: 1px solid gray;
+            padding: 3px;
+            display:inline;
+            margin-left: 8px;
+    }
+     
+    .close {
+            display: inline;
+            padding-left: 10px;
+    }
+     
+    .buttons {
+            text-align:center;
+    }
+    .full-txt{
+            width:47%;
+            text-align:center;
+            margin-bottom: 5px;
+    }
+     
+    input {
+            width:88%;
+            margin-left:5px;
+            border:none;
+            outline: none;
+            font-size: 1em;
+    }      
+     
+    button {
+            border: 1px solid #000;
+            background: #fff;
+            font-size: 1em;
+            width: 49%;
+            padding: 10 5 10 5;
+    }
+     
+    ul {
+            margin-left: -33px;
+    }
+     
+    </style>
+     
   </head>
   <body>
-
+  <div class='widget'>
+          <div class='legend'>
+                  TinyTerms      
+          </div>
+          <div class='search'>
+                  <span class="fa fa-search"></span> <input type='text' >
+          </div>
+          <div class='close'>
+                  <span class="fa fa-times-circle-o fa-lg"></span>
+          </div>
+   
+          <div class='short-terms'>
+          <ul>
+                  <li class='check'><span class="fa fa-check "></span> Copies of content shared with others may remain even after you delete the content from your account</li>
+                  <li class='star'><span class="fa fa-star"></span> Your post belongs to you but we can show it to people.</li>
+                  <li class='danger'><span class="fa fa-exclamation-triangle"></span> You permit to use your content.</li>
+                  <li class='danger'><span class="fa fa-exclamation-triangle"></span> You can not use our service unless you're under 13.</li>
+                  <li class='danger'><span class="fa fa-exclamation-triangle"></span> If we're making a big change to the terms, we'll let you know.</li>
+          </ul>
+          </div>
+          <div class='full-text'>
+  <span class="fa fa-file-text-o full-txt"> Full Text</span>
+  <span class="fa fa-file-text-o full-txt"> Full Text</span>
+   
+          </div>
+   
+          <div class='buttons'>
+                  <button> Terms of Service</button>
+                  <button>        Privacy Policy</button>
+          </div>
+  </div>
   </body>
 </html>
