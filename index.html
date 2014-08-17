@@ -56,7 +56,7 @@
         </form>
       </section>
       <section>
-        <form name="question">
+        <form name="question" class="collection">
           <h3>What information will you be collecting from the user?          </h3>
           <div>
             <label for="">Password</label>
@@ -118,16 +118,18 @@
         <form>
           <h3>Who will you disclose the information you collect from users to?</h3>
           <div>
-            <label>Within the company</label>
-            <input type="text" placeholder="Include EE's, contractors, advisors, and agents" id="dwc" class="block">
-          </div>
-          <div>
-            <label>Which affiliates?</label>
-            <input type="text" placeholder="" id="dwa" class="block">
-          </div>
-          <div>
-            <label>Third parties?</label>
-            <input type="text" placeholder="" id="dwp" class="block">
+            <div>
+              <input type="checkbox" id="d_wc" name="ow_choice">
+              <label for="d_wc">Within the company</label>
+            </div>
+            <div>
+              <input type="checkbox" id="d_wa" name="ow_choice">
+              <label for="d_wa">With affiliates</label>
+            </div>
+            <div>
+              <input type="checkbox" id="d_wp" name="ow_choice">
+              <label for="d_wp">With third parties</label>
+            </div>
           </div>
         </form>
       </section>
@@ -178,6 +180,7 @@
         </form>
       </section>
       <section id="terms" class="long">
+        <div id="actual_terms"></div>
         <p>
           Welcome to Google!
           
@@ -282,6 +285,7 @@
       </section>
     </article>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.19/firebase.js"></script>
     <script src="build/build.js"></script>
   </body>
 </html>
