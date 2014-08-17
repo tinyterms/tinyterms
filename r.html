@@ -24,7 +24,10 @@
     var code = parse('c')
     console.log(code)
     var fb = new Firebase("https://tinyterms.firebaseio.com")
-    document.write(fb.child(code))
+    var actual = fb.child(code);
+    actual.on('value',function(snapshot) {
+        document.write(snapshot.val())
+    })
 
     </script>
   </head>
