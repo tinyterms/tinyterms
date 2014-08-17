@@ -1,11 +1,11 @@
 section
     form(name="question")
-      h3 Do you have a company or is this a sole proprietorship?
+      h3 Are you developing this for a company or as an individual?
       div
         div
-          input(type="radio", id="ssn", name='pw')
-          label(for="ssn") Company
-          input(type="text" placeholder="company name...")
+          input(type="radio", id="ow_company", name='ow_choice')
+          label(for="ow_company") Company
         div
-          input(type="radio", id="ssn", name='pw')
-          label(for="ssn") Sole proprietorship
+          input(type="radio", id="ow_sp", name='ow_choice')
+          label(for="ow_sp") Individual
+      input(type="text", class="block", id="ow_name", placeholder="Company/individual (sole proprietorship) name...")

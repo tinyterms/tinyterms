@@ -28,3 +28,7 @@ bespoke.from('article', [
 // debowerify: https://github.com/eugeneware/debowerify
 require('prism');
 
+
+$("#submit").click(function() {
+  console.log("test")
+})
